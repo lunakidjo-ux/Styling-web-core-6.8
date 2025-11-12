@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1B1C21;
+}
+
+.sidebar {
+  width: 320px;
+  height: 1024px;
+  background: #fff;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* header */
+.sidebar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*is it because of this that I can't put the logo next to Xmenu icon?*/
+}
+
+.sidebar__icon {
+  background-color: #FF3E79;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.sidebar__logo img {
+  height: 32px;
+  /*I want to put it next to the Xmenu button but can't seem to find how*/
+}
+
+/*Also why is the menu not sticking to the header?*/
+
+/* Menu */
+.sidebar__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 0%;
+  margin-left: 23px;
+}
+
+.marker {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0.7;
+  filter: brightness(1.1);
+}
+
+.highlight {
+ height: 28px;
+ width: 4px; 
+ padding-right: 2p;
+}
+
+.sidebar__menu-item {
+  border: none;
+  background: none;
+  font-size: 16px;
+  text-align: left;
+  color: #1B1C21;
+  cursor: pointer;
+  left: 23px;
+}
+
+.sidebar__menu-item.hover {
+  font-weight: 700;
+  text-shadow: 1px 2px 4px gray;
+
+}
+
+
+.space {
+   height: 70px;
+}
+
+/*footer*/
+.sidebar__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar__icons {
+  display: flex;
+  gap: 12px;
+}
+
+.sidebar__icons button {
+  background-color: #FF3E79;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sidebar__mail {
+  font-style: medium;
+  font-size: 16px;
+}
+
+.sidebar__phone { 
+   font-style: bold;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.sidebar__lang {
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar__lang a {
+  text-decoration: none;
+  color: #1B1C21;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.sidebar__lang a:hover {
+  opacity: 0.5;
+}
